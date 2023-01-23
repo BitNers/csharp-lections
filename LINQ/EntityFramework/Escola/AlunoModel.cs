@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LINQ.EntityFramework.Escola.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -17,6 +18,8 @@ namespace LINQ.EntityFramework.Escola
         [Required]
         [StringLength(50)]
         public string? Nome { get; set; }
+
+        public Endereco? Endereco { get; set; }
 
         public List<MateriaModel>? Materias { get; set; }
 

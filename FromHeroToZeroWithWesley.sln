@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstImpressions", "FirstIm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AulaWebAPI", "AulaWebAPI\AulaWebAPI.csproj", "{5A097C17-3203-4E19-A784-507074C312BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1601", "Aula1601\Aula1601.csproj", "{49D4F3AF-D790-4AB7-8122-12D09BBCAE06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula1601", "Aula1601\Aula1601.csproj", "{49D4F3AF-D790-4AB7-8122-12D09BBCAE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{62D6FDCA-302A-484D-B4E4-B72624DFDF66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{49D4F3AF-D790-4AB7-8122-12D09BBCAE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D4F3AF-D790-4AB7-8122-12D09BBCAE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49D4F3AF-D790-4AB7-8122-12D09BBCAE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D6FDCA-302A-484D-B4E4-B72624DFDF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D6FDCA-302A-484D-B4E4-B72624DFDF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D6FDCA-302A-484D-B4E4-B72624DFDF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D6FDCA-302A-484D-B4E4-B72624DFDF66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

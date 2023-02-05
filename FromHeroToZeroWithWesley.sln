@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Sockets\Server.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sockets", "Sockets", "{5C8040E8-1CC9-4E4A-9CCB-64672A7C4DD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{981E08E5-2038-43CB-88BC-535A91FFB565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{981E08E5-2038-43CB-88BC-535A91FFB565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpExample", "HttpExample\HttpExample.csproj", "{028A420C-78DE-4F5F-95AB-EEAD37D06212}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{981E08E5-2038-43CB-88BC-535A91FFB565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{981E08E5-2038-43CB-88BC-535A91FFB565}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{981E08E5-2038-43CB-88BC-535A91FFB565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028A420C-78DE-4F5F-95AB-EEAD37D06212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028A420C-78DE-4F5F-95AB-EEAD37D06212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028A420C-78DE-4F5F-95AB-EEAD37D06212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028A420C-78DE-4F5F-95AB-EEAD37D06212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4CA34C92-6C0F-4D7F-9988-2E796DCA5B10} = {5C8040E8-1CC9-4E4A-9CCB-64672A7C4DD0}
 		{981E08E5-2038-43CB-88BC-535A91FFB565} = {5C8040E8-1CC9-4E4A-9CCB-64672A7C4DD0}
+		{028A420C-78DE-4F5F-95AB-EEAD37D06212} = {5C8040E8-1CC9-4E4A-9CCB-64672A7C4DD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14477BF4-2D36-4E0C-B5A8-C31CFEF3385B}

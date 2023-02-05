@@ -6,7 +6,8 @@ using System.Net.Mime;
     Site com mútliplos Endpoints para testar e praticar HTTP em código.
  */
 
-async Task MakeGetRequestAsync(string Uri, HttpMethod method) {
+
+async Task MakeRequest(string Uri, HttpMethod method, string body = "") {
 
     try
     {
@@ -15,9 +16,11 @@ async Task MakeGetRequestAsync(string Uri, HttpMethod method) {
 
         using (var requestHTTP = new HttpRequestMessage(method, requestUriGet))
         {
+            if(body != string.Empty)
+                requestHTTP.Content = new StringContent(body);
 
             requestHTTP.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", "tokenBom");
-            requestHTTP.Method = HttpMethod.Get;
+            
 
             using HttpResponseMessage httpResponse = await httpCli.SendAsync(requestHTTP);
             httpResponse.EnsureSuccessStatusCode();
@@ -34,11 +37,14 @@ async Task MakeGetRequestAsync(string Uri, HttpMethod method) {
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Erro: {ex.Message.ToString()} ");
+        Console.WriteLine($"Erro: {ex.Message} ");
     }
 }
 
 
-await MakeGetRequestAsync("https://httpbin.org/status/500", HttpMethod.Get);
-await MakeGetRequestAsync("https://httpbin.org/status/200", HttpMethod.Get);
-await MakeGetRequestAsync("https://httpbin.org/get", HttpMethod.Get);
+await MakeRequest("https://httpbin.org/status/500", HttpMethod.Get);
+await MakeRequest("https://httpbin.org/status/200", HttpMethod.Get);
+await MakeRequest("https://httpbin.org/get", HttpMethod.Get);
+
+
+await MakeRequest("https://httpbin.org/post", HttpMethod.Post, "Dados enviado, possivelmente serializado!");
